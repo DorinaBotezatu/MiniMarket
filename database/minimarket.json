@@ -1,0 +1,20 @@
+{
+  "produse": [
+    {
+      "id": "1",
+      "nume": "Paine alba",
+      "cantitate_disponibila": 1,
+      "descriere": "Paine alba, marca Franzeluta",
+      "pret": 9.5,
+      "img": "https://tastesbetterfromscratch.com/wp-content/uploads/2020/03/Bread-Recipe-5-2.jpg"
+    },
+    {
+      "id": "2",
+      "nume": "Oua, 10buc",
+      "cantitate_disponibila": 3,
+      "descriere": "Caserola cu oua",
+      "pret": 10.50,
+      "img": "https://www.heart.org/-/media/Images/News/2018/August-2018/0816Eggs_SC.jpg?h=501&w=800&hash=D30A89DF3EA9615FB2B98B4C3634BF06"
+    }
+  ]
+}
