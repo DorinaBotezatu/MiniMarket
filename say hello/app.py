@@ -7,13 +7,16 @@ app.secret_key = "abcdef"
 
 @app.route("/")
 def index():
-    produse = functii_produse.citeste_produse()
-    return render_template("index1.html", produse=produse)
+    try:
+        produse = functii_produse.citeste_produse_mysql()
+        return render_template("index1.html", produse=produse)
+    except Exception as e:
+        print(e)
 
 
 @app.route("/produs/<id>")
 def produs(id):
-    produs = functii_produse.citeste_produs(id)
+    produs = functii_produse.citeste_produs_mysql(id)
     return render_template("detalii_produs.html", produs=produs)
 
 
